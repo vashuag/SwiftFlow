@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SwiftFlow</string>
+
+
+    <string name="image_contentDescription">image</string>
+    <string name="let_s_get_started_text">Let\'s Get started</string>
+    <string name="intro_text_description">Create, collaborate and share seamlessly with SwifFlow - the minimalist platform for teams. Join us now and streamline your workflow!</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
 </resources>
