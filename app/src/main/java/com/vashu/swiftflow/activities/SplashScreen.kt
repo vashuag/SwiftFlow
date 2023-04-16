@@ -1,13 +1,13 @@
-package com.vashu.swiftflow
+package com.vashu.swiftflow.activities
 
 import android.content.Intent
-import android.graphics.Typeface
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowInsets
 import android.view.WindowManager.LayoutParams.FLAG_FULLSCREEN
 import androidx.appcompat.app.AppCompatActivity
+import com.vashu.swiftflow.R
 
 
 class SplashScreen : AppCompatActivity() {
@@ -33,11 +33,11 @@ class SplashScreen : AppCompatActivity() {
 //        tv_app_name.typeface =typeFace
 
         Handler().postDelayed({
-                              startActivity(Intent(this,IntroActivity::class.java))
+                              startActivity(Intent(this, IntroActivity::class.java))
             finish()
 
 
-        },2500)
+        },2000)
 
 
 

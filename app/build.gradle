@@ -1,11 +1,27 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+
+
 }
 
+
+
+
 android {
+
+    viewBinding{
+
+        enabled = true
+    }
     namespace 'com.vashu.swiftflow'
     compileSdk 33
+
+    buildFeatures {
+        viewBinding true
+    }
 
     defaultConfig {
         applicationId "com.vashu.swiftflow"
@@ -34,9 +50,18 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.10.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.airbnb.android:lottie:4.1.0'
+    implementation platform('com.google.firebase:firebase-bom:31.5.0')
+
+    implementation 'com.airbnb.android:lottie:6.0.0'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-firestore:24.5.0'
+
+
+    implementation 'com.google.firebase:firebase-auth:21.3.0'
+
+    implementation "com.google.android.material:material:1.8.0"
 
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
